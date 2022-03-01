@@ -16,5 +16,15 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "admin1" && txtUsername.Text == "admin")
+            {
+                MessageBox.Show("Succesful");
+                ThanhCong f = new ThanhCong();
+                f.Show();
+            }
+        }
     }
 }
